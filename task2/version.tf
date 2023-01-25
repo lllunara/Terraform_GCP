@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "terraformbucketlunara"
-    prefix = "terraform/"
+    bucket      = "terraformbucketlunara"
+    prefix      = "terraform/"
     credentials = "../../vpc/gcp-creds.json"
   }
 }
