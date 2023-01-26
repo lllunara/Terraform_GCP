@@ -47,7 +47,7 @@ Step 4: Create the Postgres Engine instance
 Run the following command to create the Postgres Engine instance:
 
 Copy code
-'terraform apply'
+terraform apply
 This will prompt you to confirm the creation of the resources. Type yes and press enter to proceed.
 
 Step 5: Verify the Postgres Engine instance
@@ -57,7 +57,7 @@ Cleanup
 When you're finished with the Postgres Engine instance, you can run the following command to delete it:
 
 Copy code
-'terraform destroy'
+terraform destroy
 This will prompt you to confirm the deletion of the resources. Type yes and press enter to proceed.
 
 Note: The code snippet provided does not include the availability_type and backup_configuration, but you can add them in the same way as location_preference is defined.
