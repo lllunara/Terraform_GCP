@@ -1,20 +1,20 @@
 ## VPC
 resource "google_compute_network" "vpc_network" {
-  name                    = "vpc-network"
+  name = "vpc-network"
   auto_create_subnetworks = false
 
   lifecycle {
     prevent_destroy = true
   }
-}
+} 
 
 
 ## Subnets
 resource "google_compute_subnetwork" "custom-test" {
-  name                     = "private-subnet-${local.name}"
-  ip_cidr_range            = local.private-subnet
-  region                   = "us-central1"
-  network                  = google_compute_network.vpc_network.id
+  name          = "private-subnet-${local.name}"
+  ip_cidr_range = local.private-subnet
+  region        = "us-central1"
+  network       = google_compute_network.vpc_network.id
   private_ip_google_access = "true"
 }
 
@@ -37,16 +37,16 @@ resource "google_compute_instance_template" "tpl" {
 
   disk {
     source_image = "debian-cloud/debian-11"
-
+    
   }
 
   metadata_startup_script = file("user-data.sh")
 
   network_interface {
-    network    = google_compute_network.vpc_network.id
+    network = google_compute_network.vpc_network.id
     subnetwork = google_compute_subnetwork.custom-test.id
     access_config {
-
+      
     }
   }
 }
@@ -67,12 +67,12 @@ resource "google_compute_health_check" "autohealing" {
 
 ## instance group
 resource "google_compute_instance_group_manager" "test" {
-  name               = "terraform-test-${local.name}"
-  description        = "Terraform test instance group"
+  name        = "terraform-test-${local.name}"
+  description = "Terraform test instance group"
   base_instance_name = "app"
-  zone               = "us-central1-b"
-  target_size        = "1"
-  version {
+  zone        = "us-central1-b"
+  target_size  = "1"
+  version{
     instance_template = google_compute_instance_template.tpl.id
   }
 
@@ -80,7 +80,7 @@ resource "google_compute_instance_group_manager" "test" {
     health_check      = google_compute_health_check.autohealing.id
     initial_delay_sec = 300
   }
-
+  
   depends_on = [
     google_compute_instance_template.tpl
   ]
@@ -115,18 +115,11 @@ resource "google_compute_firewall" "rules" {
     for_each = local.firewall_allow
     content {
       protocol = allow.value["protocol"]
-      ports    = lookup(allow.value, "ports", null)
-    }
+      ports     = lookup(allow.value, "ports", null) 
   }
-
-
-
-  # allow {
-  #   protocol  = "tcp"
-  #   ports     = ["80"]
-  # }
-  source_ranges = [local.internet]
-  target_tags   = ["http"]
+  }
+   source_ranges = [local.internet]
+   target_tags = ["http"]
 }
 
 ## Forwarding rule
@@ -143,13 +136,13 @@ resource "google_compute_global_forwarding_rule" "default" {
 
 # reserved IP address
 resource "google_compute_global_address" "default" {
-  name = "l7-xlb-static-ip"
+  name     = "l7-xlb-static-ip"
 }
 
 # http proxy
 resource "google_compute_target_http_proxy" "default" {
-  name    = "l7-xlb-target-http-proxy"
-  url_map = google_compute_url_map.default.id
+  name     = "l7-xlb-target-http-proxy"
+  url_map  = google_compute_url_map.default.id
 }
 
 # url map
@@ -254,7 +247,7 @@ resource "google_compute_backend_service" "default" {
 #   disk {
 #     source_image      = "debian-cloud/debian-11"
 #   }
-
+     
 #   metadata_startup_script = file("user-data.sh")
 
 
@@ -262,7 +255,7 @@ resource "google_compute_backend_service" "default" {
 #   network = google_compute_network.custom-test.id
 #   subnetwork =  google_compute_subnetwork.public.name
 #   access_config {
-
+    
 #   }
 #   }
 #  }
