@@ -1,9 +1,3 @@
-provider "google" {
-  credentials = file("creds.json")
-  project     = "anttech2"
-  region      = "us-central1"
-  zone        = "us-central1-b"
-}
 
 ## VPC
 resource "google_compute_network" "vpc_network" {
@@ -161,10 +155,4 @@ resource "google_compute_backend_service" "default" {
   }
 }
 
-terraform {
-  backend "gcs" {
-    bucket      = "aktans-bucket-dont-touch"
-    prefix      = "ter/"
-    credentials = "../creds.json"
-  }
-}
+

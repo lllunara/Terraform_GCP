@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "anttech2",
+  "private_key_id": "c8440c4800b7f73519957ca58e7b701a8226295b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDF5aoch4t3kBRz\n73dN7ElPznAmF/AmLiQP0e1FSW64vXo87tMnGTbU0a1VhTJW3/+IZlGTDUeBYFUf\nxLR9l3acJQr165ZuBVnEirdsn/0CWH03p1RbpUbOYVVvqxfHLfa5EtQ+Wn1qcI5/\nHkIz1Nf1spJj5jLCmaflWQE8ay6S7W3ySysrIqXdAGAfKYmuevvQgO4I7hCjwZBH\nGQ4nTVbjpD9TqW1fudUfhrZ6mI5/iH66C7crH+x2Agv6CwNapPeXqbOmBnK3k7Du\nvPYSfPdvot33xEqyJvKXz+JShCvJl8rVkESHqmkCd+6Rzo0pWhGPKrlPC4t2O5+H\njaArLtPXAgMBAAECggEALCncREClibmwLs1OmSe1lqdR1NZ7w/GBH7ywEEnaeUTj\nvixoF+4jE+x1G8Q9XzDfBHAdHU2V2xQF+zB5PRvrnt4Pa6E3MXdlOJziYU309yyL\nSTvA8jDYs97545FRnaQuzs+aaQ3ltjbHPiwhBxMlXNIMpFmvk0kaNG8f/P1IaAZK\nVVNONX4eHnTagD9AApNOQlv0Tqfyq4ssYb5QEWmpkw7rN/QteT1Mjo9cfmcFH5Xn\nhY1/dhZweUxMawUVMWbWJljl3gOlqKLyPWKdUBlItNLXV7d+uY1RMVgX4afkFg6R\npFrdwinF+iydpgwDU7d+DSJsFJWHXPW+qqlqkX6jIQKBgQD96YluuDLz4ENiBD10\n6h9Nf76JqXtZIdRIeplnCDKKoMSq9lok1sze1gwtNlmm14HWq95QVvPBHYBibQcf\nwpq8PZ7ANAJb0tP39tOFVhmb5zoL8Lfr89ThS8whtR7yxnPKS/wqKl4w+PTxHKF9\nNReZ0wKiNJy4lRlrRb5ALLK59wKBgQDHhjh/envB+b7f/0DUVI5/OkolzdSgbdga\nMce+uKSUC1fTL/ocmiK+4+65gscBGJmz9WjIW5dpy3CKOPHtMefPWdB8JFEg+r2N\n4tTM0amBxshwqY4m8N7WKqyE1d3B7UsX08+8a/TdRdPlKOajdB5PJobi6nrMFFa2\ngyZa/5M9IQKBgH/VavbOUADOYL5hShupn5biAKjIJizKxlizOLZRvzhiFoHIQ7wW\nVNC/zSOaIGrKRzkwEF48WL5aPv/Oym5oCIVLNLiptqJKM6O8peOUZJJESMooKEDn\n4r6G7b/usyUhWrx3ov4LlJ5tSMx3UKp752TvgnztphWcI08Jru4aUuUjAoGBAJSt\nBH6hg4S4mC4L44AU/hX6FnRzGyTslSJ3w7LvndufVDNPRd14UbnS2PmtZKMBdM8v\naIQcFAjGirbE1il8jZLqBzvqR/X+Qa9vvkhdVyUYPhYNkpqb1EDcja9yOgueyd0Y\nfWyXOWCE/u98+dgE1+z89XgzZ4uZAECCG9ulJE9hAoGAT2EdkjyDsaV8m1UkUdpV\njCuOIuyDCDXREDikhRwfyGzLAhNgFR3HgfU8vo1FNHuUsMkh9wBwzeuT3OIdW/10\nI7n0g/bT5EAxue0WWK4GqNjw1shFMevHdDA7tb9ngR9KmozZj+Yqe2pJsV3Rc7M4\nnjTXSF5IQ5kuF7l7rPB/cJE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "aktan-26@anttech2.iam.gserviceaccount.com",
+  "client_id": "109533101632747091830",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aktan-26%40anttech2.iam.gserviceaccount.com"
+}
