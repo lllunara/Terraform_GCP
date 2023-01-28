@@ -1,6 +1,6 @@
 # Local terraform directories
 **/.terraform/*
-*/lock.*
+*lock.*
 *.json
 
 #State files
@@ -12,3 +12,7 @@
 
 # Sensitive data
 *.tfvars
+
+fjas
+
+
